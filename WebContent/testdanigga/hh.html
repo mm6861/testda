@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 파일전송일 때는 항상 METHOD는 POST로 하고 enctype를 다음과 같이 설정해야한다.  -->
+<form action="upload.jsp" method="post" enctype="multipart/form-date">
+	<!-- 파일전송일때 tyep="file" -->
+	파일 1 : <input type="file" name="file1"><br>
+	파일 2 : <input type="file" name="file2"><br>
+	파일 3 : <input type="file" name="file3"><br>
+	파라미터1: <input type="text" name="param1"/><br>
+	파라미터2: <input type="text" name="param2"/><br>
+	파라미터3: <input type="text" name="param3"/><br>
+	<input type="submit" value="전송">
+</form>
+</body>
+</html>
